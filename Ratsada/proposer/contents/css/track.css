@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1F0FF;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #7F95E4;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-left: 1px solid black; /* Add border to the left side of the table */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black; /* Add border to columns */
+}
+
+th:first-child,
+td:first-child {
+    border-left: 1px solid black; /* Add border to the left side of first column */
+}
+
+.header-row th:first-child {
+    border-left: none; /* Remove border from left side of first column in header row */
+}
+
+.header-row th {
+    border-right: none; /* Remove border from right side of last column in header row */
+}
+
+.header-row {
+    background-color: #443266;
+    color: #F1F0FF;
+}
+
+.orange {
+    color: orange;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.action-button {
+    background-color: #443266;
+    color: #F1F0FF;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.truncate {
+    max-width: 200px; /* Adjust as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.truncate:hover {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+}

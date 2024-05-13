@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GMEF Archiving System</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/gmef.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+      <span class="navbar-brand mb-0 h1">GMEF Archiving System</span>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Upload Files</h2>
+        <form id="uploadForm">
+          <div class="form-group">
+            <label for="file">Choose Files:</label>
+            <input type="file" class="form-control-file" id="file" name="file" multiple>
+          </div>
+          <button type="submit" class="btn btn-primary">Upload</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h2>File Details</h2>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>File Name</th>
+                <th>File Size</th>
+                <th>Upload Date</th>
+                <th>Download</th>
+              </tr>
+            </thead>
+            <tbody id="fileDetails">
+              <!-- File details will be inserted here -->
+            </tbody>
+          </table>
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Download All
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#" data-year="2020">2020</a>
+            <a class="dropdown-item" href="#" data-year="2021">2021</a>
+            <a class="dropdown-item" href="#" data-year="2022">2022</a>
+            <a class="dropdown-item" href="#" data-year="2023">2023</a>
+            <a class="dropdown-item" href="#" data-year="2024">2024</a>
+            <a class="dropdown-item" href="#" data-year="2025">2025</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/gmef.js"></script>
+</body>
+</html>

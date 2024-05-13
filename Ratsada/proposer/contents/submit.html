@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gad System</title>
+  <link rel="stylesheet" href="css/submit.css">
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" href="../assets/img/gad.png" type="image/png">
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="text-center mt-4 mb-3 text-white">Submit a Proposal</h1>
+    <form>
+      <div class="form-group">
+        <label for="proposalTitle" class="text-white">TITLE OF THE PROPOSAL:</label>
+        <input type="text" class="form-control" id="proposalTitle">
+      </div>
+      <div class="form-group">
+        <label for="proponentsName" class="text-white">NAME OF THE PROPONENT/S:</label>
+        <input type="text" class="form-control" id="proponentsName">
+      </div>
+      <div class="form-group">
+        <label for="officeUnit" class="text-white">OFFICE/UNIT:</label>
+        <input type="text" class="form-control" id="officeUnit">
+      </div>
+      <div class="form-group">
+        <label for="programDescription" class="text-white">PROGRAM/PROJECT DESCRIPTION:</label>
+        <textarea class="form-control" id="programDescription" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="uploadDocuments" class="text-white">UPLOAD DOCUMENTS:</label>
+        <input type="file" class="form-control-file" id="uploadDocuments" multiple>
+      </div>
+      <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>
